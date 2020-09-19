@@ -7,6 +7,7 @@
 
 ### `props` are not working inside `["& ...]` selectors
 
+- `makeStyles()` is very strange. See the API at https://material-ui.com/styles/api/#makestyles-styles-options-hook
 - To fix it `theme` is used
 
 Example:
