@@ -1,0 +1,42 @@
+# CSS in JS
+
+## Material UI
+
+- So far the most complete solution for object notation
+- Used at Lynx by many people and many projects and it simply goes straightforward
+
+### `props` are not working inside `["& ...]` selectors
+
+- To fix it `theme` is used
+
+Example:
+
+```js
+const useStyles = makeStyles((theme) => ({
+  /**
+   * Creates the faux lines CSS
+   */
+  fauxLines: {
+    ["&  > *"]: {
+      boxSizing: "border-box",
+
+// This works
+      [`${theme.custom.borderLeftSelector2}`]: {
+        borderLeft: (props) => (props.displayHorizontal ? "1px solid" : "none"),
+      },
+
+// This ain't works at all
+      [`&:not(:nth-child(${(props) => props.borderBottomException}))`]: {
+        borderBottom: (props) => (props.displayVertical ? "1px solid" : "none"),
+      },
+    },
+  },
+  ...
+```
+
+## Styled components
+
+- It's the de facto standard
+- Yet neither `css` nor `styled` nor string literals nor object notation works perfectly.
+- Some stuff can be solved only bby one of the above approaches. Some stuff with another.
+- Combining them together is possible but many times is a nightmare
