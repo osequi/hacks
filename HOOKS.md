@@ -1,21 +1,24 @@
 # Hooks
 
+## Can render UI elements when packaged with Bit.dev
 
-## Can't render UI elements
+See example at: https://github.com/osequi/react-css-perspective/blob/master/src/components/SquareMove/SquareMove.js
 
-They just return data, not parts of the UI.
+## Can't render UI elements when packaged as `npm`
+
+They just return data, cannot return parts of the UI.
 
 ### Examples
 
 ```js
 return (
-        <Control
-            {...item}
-            key={id}
-            value={values[camelCase(label)]}
-            eventHandler={eventHandler}
-          />
-      );
+  <Control
+    {...item}
+    key={id}
+    value={values[camelCase(label)]}
+    eventHandler={eventHandler}
+  />
+);
 ```
 
 Gives the following error:
@@ -26,7 +29,7 @@ Failed to compile
 ./node_modules/@osequi/use-controls/useControls.js
 SyntaxError: /home/cs/osequi/use-controls/demo/node_modules/@osequi/use-controls/useControls.js: Unexpected token (65:8)
 
-  63 | 
+  63 |
   64 |       return (
 > 65 |         <Control
      |         ^
@@ -59,22 +62,21 @@ const useMarkdown = (file) => {
 };
 ```
 
-The `<div>` gave the same `Unexpected token` error message. 
-	
+The `<div>` gave the same `Unexpected token` error message.
 
 ```js
 // Now ...
 const [markdown, setMarkdown] = useState("");
 
-  useEffect(() => {
-    fetch(file)
-      .then((response) => {
-        return response.text();
-      })
-      .then((text) => {
-        setMarkdown(marked(text));
-      });
-  }, [file]);
+useEffect(() => {
+  fetch(file)
+    .then((response) => {
+      return response.text();
+    })
+    .then((text) => {
+      setMarkdown(marked(text));
+    });
+}, [file]);
 
-  return { markdown: markdown };
+return { markdown: markdown };
 ```
