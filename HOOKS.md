@@ -2,11 +2,14 @@
 
 ## Can render UI elements when packaged with Bit.dev
 
-See example at: https://github.com/osequi/react-css-perspective/blob/master/src/components/SquareMove/SquareMove.js
+- See example at: https://github.com/osequi/react-css-perspective/blob/master/src/components/SquareMove/SquareMove.js
 
 ## Can't render UI elements when packaged as `npm`
 
-They just return data, cannot return parts of the UI.
+- They just return data, cannot return parts of the UI.
+- This might be a peer dependencies problem:
+  - https://stackoverflow.com/questions/63892194/react-16-hooks-dont-work-in-nested-npm-package
+  - https://developpaper.com/understanding-peer-dependencies/
 
 ### Examples
 
