@@ -9,7 +9,7 @@
 
 - 36k stars
 - Very nice and easy
-- Cannot combine initial transforms (`rotateY: 90deg`) of an element with a later keyframes animation addition (`translateX from -100 to 100`)
+- Cannot combine initial transforms (`rotateY: 90deg`) of an element with a later keyframes animation addition (`translateX from -100 to 100`). The result is `transform: rotateY(90deg) translatex(-100 to 100)` versus `transform: rotateY(90deg); animation: <something which does translateX(-100 to 100)` See https://github.com/osequi/react-css-perspective/commit/d146fda49a418aa34878d3db3b935ccdeb4c946e
 
 ## Framer Motion
 
