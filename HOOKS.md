@@ -8,4 +8,5 @@
   - https://developpaper.com/understanding-peer-dependencies/
 - After fixing it another weird error came up: https://github.com/babel/babel/issues/12018
 - This is too much devops.
+- Bit.dev has a special React compiler solving all the devops: https://bit.dev/bit/envs/compilers/react/~code
 
