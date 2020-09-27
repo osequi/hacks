@@ -1,5 +1,11 @@
 # CSS in JS
 
+- None of them is perfect
+- The learning curve is high
+- You can run in problems anytime with any of the libraries
+
+A good overview: https://github.com/mui-org/material-ui/issues/22342
+
 ## Material UI
 
 - So far the most complete solution for object notation

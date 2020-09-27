@@ -1,5 +1,9 @@
 # Animations
 
+- None of them is perfect
+- The learning curve is high
+- You can run in problems anytime with any of the libraries
+
 ## GSAP 
 
 - 11k stars
