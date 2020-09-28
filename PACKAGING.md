@@ -1,4 +1,9 @@
-# Hooks
+# Packaging
+
+## Bit.dev
+
+- `bit import` gives `Error: Invalid hook call.` on usage.
+- So the way to modify a package is: 1. copy to the current project 2. edit 3. copy back to the home dir 4. publish
 
 ## Peer dependencies problem when rendering HTML
 
