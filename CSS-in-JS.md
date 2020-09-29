@@ -11,7 +11,7 @@ A good overview: https://github.com/mui-org/material-ui/issues/22342
 - So far the most complete solution for object notation
 - Used at Lynx by many people and many projects and it simply goes straightforward
 
-### `props` are not working inside `["& ...]` selectors
+### `props` are not working inside `["& :not(:nth-child ...]` selectors
 
 - `makeStyles()` is very strange. See the API at https://material-ui.com/styles/api/#makestyles-styles-options-hook
 - To fix it `theme` is used
@@ -39,6 +39,19 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   ...
+```
+
+However this works fine (`props.selector` is "> *") :
+
+```js
+container: (props) => ({
+    display: "flex",
+    justifyContent: "space-between",
+
+    [`& ${props.selector}`]: {
+      background: "red",
+    },
+  }),
 ```
 
 ## Styled components
