@@ -2,12 +2,18 @@
 
 ## Bit.dev
 
+### Importing a package into a project, editing, then publishing -- Not working
+
 - `bit import` gives `Error: Invalid hook call.` on usage.
 - So the way to modify a package is: 1. copy to the current project 2. edit 3. copy back to the home dir 4. publish
 
+### Importing a package gives the same Peer dependencies error like npm
+
+- https://github.com/teambit/bit/issues/3166
+
 ## Peer dependencies problem when rendering HTML
 
-- A hook which renders HTML [works well](https://github.com/osequi/react-css-perspective/blob/master/src/components/SquareMove/SquareMove.js) with Bit.dev and [breaks](https://github.com/osequi/use-controls) on npm packaging.
+- A hook which renders HTML ~~[works well](https://github.com/osequi/react-css-perspective/blob/master/src/components/SquareMove/SquareMove.js) with Bit.dev~~ and [breaks](https://github.com/osequi/use-controls) on npm packaging.
 - The reason is peer / dev dependencies:
   - https://stackoverflow.com/questions/63892194/react-16-hooks-dont-work-in-nested-npm-package
   - https://developpaper.com/understanding-peer-dependencies/
