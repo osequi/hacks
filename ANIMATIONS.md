@@ -4,6 +4,11 @@
 - The learning curve is high
 - You can run in problems anytime with any of the libraries
 
+## Plain CSS with Material UI
+
+- So far the best.
+- However with subtle, annoying tricks like 'animation' works only if it's inside an `animation` JSS selector and doesn't uses props ... https://github.com/osequi/somenage/commit/3a079f86080f6f8b37619219c806fa02f3e5a657, https://github.com/osequi/somenage/commit/e5c2ef420f52eedee29a90b35dc139fbca263b91
+
 ## GSAP 
 
 - 11k stars
