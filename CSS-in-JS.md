@@ -6,6 +6,18 @@
 
 A good overview: https://github.com/mui-org/material-ui/issues/22342
 
+## Emotion
+
+- Can't even be installed for CRA.
+- To fix it, devops needed, lots of them.
+
+```
+Failed to compile
+
+./src/App.js
+Error: /home/cs/osequi/test-emotion/src/App.js: transform-react-jsx: pragma has been set but pragmaFrag has not been set
+```
+
 ## Material UI
 
 - So far the most complete solution for object notation
