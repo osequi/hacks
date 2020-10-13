@@ -6,6 +6,12 @@
 
 A good overview: https://github.com/mui-org/material-ui/issues/22342
 
+## JSS
+
+- Can't use props for keyframes: https://github.com/cssinjs/jss/issues/1216
+- The same bug is present in MUI
+- The `theme.custom` vs `props` hack works only once.
+
 ## Emotion
 
 - Can't even be installed for CRA.
@@ -26,7 +32,7 @@ Error: /home/cs/osequi/test-emotion/src/App.js: transform-react-jsx: pragma has 
 ### `props` are not working inside `["& :not(:nth-child ...]` selectors
 
 - `makeStyles()` is very strange. See the API at https://material-ui.com/styles/api/#makestyles-styles-options-hook
-- To fix it `theme` is used. HOWEVER it turns out the hacks works only once in a series of calls: https://github.com/osequi/somenage/commit/0beef63f6bf0249bb412716526b294c71f4c7278
+- To fix it `theme` is used. HOWEVER it turns out the hack works only once in a series of calls: https://github.com/osequi/somenage/commit/0beef63f6bf0249bb412716526b294c71f4c7278
 
 Example:
 
