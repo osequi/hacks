@@ -5,6 +5,7 @@
 - You can run in problems anytime with any of the libraries
 
 A good overview: https://github.com/mui-org/material-ui/issues/22342
+Speed of rendering: https://tuchk4.github.io/css-in-js-app
 
 ## JSS
 
