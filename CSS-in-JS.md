@@ -7,23 +7,19 @@
 A good overview: https://github.com/mui-org/material-ui/issues/22342
 Speed of rendering: https://tuchk4.github.io/css-in-js-app
 
+## Emotion
+
+- Works out of the box: https://github.com/osequi/test-emotion
+- It has a few, but all mandatory features, which all work fine.
+- For example theming is missing, ie. is part of the `@emotion/core` which is not CRA compatible. But theming is not mandatory.
+- MUI will move to Emotion
+- Emotion is the fastest among the actively maintained major packages: JSS (MUI), Styled-components, Fela
+
 ## JSS
 
 - Can't use props for keyframes: https://github.com/cssinjs/jss/issues/1216
 - The same bug is present in MUI
 - The `theme.custom` vs `props` hack works only once.
-
-## Emotion
-
-- Can't even be installed for CRA.
-- To fix it, devops needed, lots of them.
-
-```
-Failed to compile
-
-./src/App.js
-Error: /home/cs/osequi/test-emotion/src/App.js: transform-react-jsx: pragma has been set but pragmaFrag has not been set
-```
 
 ## Material UI
 
