@@ -2,6 +2,54 @@
 
 An overview of a few Design Systems written in React.
 
+## Material UI 
+
+### Summary 
+
+### Purpose
+
+### Findings
+
+### Takeaways - Where Somenage is worst
+
+### Where Somenage is better
+
+
+
+## Braid 
+
+- https://seek-oss.github.io/braid-design-system/
+- https://github.com/seek-oss/braid-design-system
+
+### Summary 
+
+- Almost as rich as MUI.
+- Feels heavy.
+- Almost everything except React is done in-house.
+
+### Purpose
+
+- For non-devs.
+- Simplicity and composability of the API.
+
+### Findings
+
+- Typescript, with interfaces and types mixed up seeming randomly.
+- Chaotic main folder structure, and also beyond.
+- Themes and tokens are mixed up: https://github.com/seek-oss/braid-design-system/blob/master/lib/themes/seekUnifiedBeta/tokens.ts
+- Uses an in-house styling system called `treat`
+- In-house docs generator, in-house Storybook-like scenario testing
+- No tests for components.
+
+### Takeaways - Where Somenage is worst
+
+- ?
+
+### Where Somenage is better
+
+- Lightweight
+- Better theory
+
 ## Adobe Spectrum
 
 - https://react-spectrum.adobe.com/index.html
