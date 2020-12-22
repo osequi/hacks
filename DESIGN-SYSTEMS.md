@@ -2,6 +2,43 @@
 
 An overview of a few Design Systems written in React.
 
+## Adobe Spectrum
+
+- https://react-spectrum.adobe.com/index.html
+- https://github.com/adobe/react-spectrum
+
+### Summary 
+
+- Almost as rich as MUI.
+- Feels heavy.
+- Not yet completed. There are no submenus, for example. React Aria lists cannot contain interactive elements like links, for example. 
+
+### Purpose
+
+- Accessible.
+- To build Adobe apps.
+
+### Findings
+
+- Typescript with interfaces. It's more complicated than Sanity.
+- Monorepo with Lerna and Yarn Workspaces
+- Stylus
+- Storybook for Spectrum, MDX for Aria.
+- Class syntax
+- Weak theory. Types are completely separated from code in a standalone package
+- Well written unit tests
+- Well structured code for every component: src, tests, docs, stories ...
+
+### Takeaways - Where Somenage is worst
+
+- Stately and Aria provide a very great foundation. One day Somenage might be built on it.
+- Perhaps tests
+- Everything seems well done, every part seems to be properly researched, but that makes it heavy, very heavy.
+
+### Where Somenage is better
+
+- Lighter
+
 ## Aragon UI
 
 - https://ui.aragon.org/
