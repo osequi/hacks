@@ -17,15 +17,17 @@
 - Uses Lerna, Yarn Workspaces; doesn't use module aliases.
 - Styled components, css syntax
 - Extensive use of Recat hooks, especially refs and callbacks
+- Docs have a nice UI running on Next. Content comes from the Sanity backend, ie is not autogenereted.
 - Concerns not separated: `Menu` component includes helpers, buttons, items etc. Maybe this is a 'single responisibility principle'.
 - Concerns not separated: chaotic folder structure, can't figure out the logic. Couldn't found where to set up fonts.
 
-### Where Somenage is worst (Takeaways)
+### Takeaways - Where Somenage is worst
 
 - Monorepo w Lerna
 - Typescript
+- API UI
 
-### Where Somenage is better (Unique Selling Points)
+### Where Somenage is better
 
 - Easier to use (better theory behind)
 - Live API Docs (better comments)
