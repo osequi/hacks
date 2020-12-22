@@ -10,6 +10,11 @@
 - Docs are perfect.
 - APi is clear.
 
+### Purpose
+
+- Have their own DS; don't rely on 3rd parties.
+- Let devs compose UIs on their own.
+
 ### Findings
 
 - https://www.sanity.io/ui
