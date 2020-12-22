@@ -26,10 +26,11 @@
 - Monorepo w Lerna
 - Typescript
 - API UI
+- Very clean API. See the arcade.
 
 ### Where Somenage is better
 
-- Easier to use (better theory behind)
+- Better DX (better theory behind / better separation of concerns => easier to find stuff)
 - Live API Docs (better comments)
 - Better test coverage
 
