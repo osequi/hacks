@@ -4,8 +4,11 @@
 
 ### Summary
 
+- It's not fully finished. Contains just a few 'primitives' compared to MUI.
 - Theory is not well thought.
 - Technicaly perhaps brilliant.
+- Docs are perfect.
+- APi is clear.
 
 ### Findings
 
