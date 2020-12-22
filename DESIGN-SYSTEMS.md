@@ -1,14 +1,60 @@
 # Design Systems
 
+An overview of a few Design Systems written in React.
+
+## Aragon UI
+
+- https://ui.aragon.org/
+- https://github.com/aragon/ui
+
+### Summary
+
+- Not as rich as MUI, but rich enough for simple UIs.
+- No Typescript.
+- Weak theory.
+- No brilliant tech and code quality.
+
+### Purpose
+
+- Let devs build Aragon apps.
+
+### Findings
+
+- Nice UI
+- Not as rich as MUI, but rich enough for simple UIs
+- No Typescript
+- Uses styled components
+- Published to `npm`
+- Complicated theme setup: https://github.com/aragon/ui/blob/master/src/theme/theme-dark.js
+- Weak theory: stuff has to be st up in multiple folders.
+- Weak theory: CSS is embedded in JSX
+- No tests
+- Nicely generated(?) READMEs.
+- No live docs
+- States in components well separated: https://github.com/aragon/ui/tree/master/src/components/Card
+
+### Takeaways - Where Somenage is worst
+
+- Docs UI, generated READMEs
+
+### Where Somenage is better
+
+- Better DX (better theory behind / better separation of concerns => easier to find stuff)
+- Live API Docs (better comments)
+- Better test coverage
+
 ## Sanity.io
+
+- https://www.sanity.io/ui
+- https://github.com/sanity-io/design
 
 ### Summary
 
 - It's not fully finished. Contains just a few 'primitives' compared to MUI.
-- Theory is not well thought.
+- Weak theory.
 - Technicaly perhaps brilliant.
 - Docs are perfect.
-- APi is clear.
+- API is clear.
 
 ### Purpose
 
@@ -17,8 +63,6 @@
 
 ### Findings
 
-- https://www.sanity.io/ui
-- https://github.com/sanity-io/design/tree/next/ui/src/components/menu
 - Typescript with `interface`, looks pretty clean.
 - Storybook vs. unit testing testing. Sometimes unit testing is present.
 - Uses QA Wolf vs Cypress for e2e testing
